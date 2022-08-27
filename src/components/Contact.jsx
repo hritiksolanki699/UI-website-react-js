@@ -133,7 +133,7 @@ const Text = styled.span`
 
 const Contact = () => {
     return (
-        <Container>
+        <Container id="contact">
             <Wrapper>
                 <FormContainer>
                     <Title>

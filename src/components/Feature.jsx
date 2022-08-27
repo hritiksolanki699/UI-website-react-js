@@ -78,7 +78,7 @@ const Button = styled.button`
 `
 const Feature = () => {
     return (
-        <Container>
+        <Container id="features">
             <Left><Image src={phone} /></Left>
             <Right>
                 <Title>

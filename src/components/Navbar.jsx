@@ -36,7 +36,13 @@ const MenuItem = styled.li`
   font-size: 20px;
   font-weight: bold;
   color: gray;
+  cursor: pointer;
 `;
+
+const A = styled.a`
+ text-decoration: none;
+ color:gray;
+`
 
 const Button = styled.button`
     border: 2px solid white;
@@ -51,15 +57,16 @@ const Button = styled.button`
 
 
 function Navbar() {
-    return <Container>
+    return <Container id='home'>
         <Wrapper>
-            <Left><Logo>Agency</Logo>
+            <Left>
+            <Logo>Agency</Logo>
                 <Menu>
-                    <MenuItem>Home</MenuItem>
-                    <MenuItem>Features</MenuItem>
-                    <MenuItem>Seriverces</MenuItem>
-                    <MenuItem>Pricing</MenuItem>
-                    <MenuItem>Contact</MenuItem>
+                    <MenuItem><A href='#home'>Home</A></MenuItem>
+                    <MenuItem><A href='#features'>Features</A></MenuItem>
+                    <MenuItem><A href='#services'>Services</A></MenuItem>
+                    <MenuItem><A href='#pricing'>Pricing</A></MenuItem>
+                    <MenuItem><A href='#contact'>Contact</A></MenuItem>
                 </Menu>
             </Left>
             <Button>JOIN TODAY</Button>
